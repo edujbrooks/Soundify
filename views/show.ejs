@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Soundify!! Spice it up!!</title>
+
+	<link rel="stylesheet" href="/stylesheets/style.css" type="text/css"/>
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+	<div id="wrapper" class="wrapper">
+
+		<h1><%= soundify.title %></h1><br>
+
+    <div class="itemWrapper videoWrapper">
+
+      <h2>VIDEO TRACK</h2>
+      <input type="hidden" id="videoType" value="<%= soundify.videoType %>">
+      <input type="hidden" id="videoSeconds" value="<%= soundify.videoSeconds %>">
+
+  		<div id="player1" class="player1"></div>
+      <label>URL: </label><a href="<%= soundify.videoURL %>" target="_blank"><label id="videoUrl"><%= soundify.videoURL %></label></a><br>
+    </div>
+
+    <div class="itemWrapper soundWrapper">
+
+      <h2>AUDIO TRACK</h2>
+      <input type="hidden" id="soundType" value="<%= soundify.soundType %>">
+      <input type="hidden" id="soundSeconds" value="<%= soundify.soundSeconds %>">
+
+      <div id="player2" class="player2"></div>
+      <label>URL: </label><a href="<%= soundify.soundURL %>" target="_blank"><label id="soundUrl"><%= soundify.soundURL %></label></a><br>
+    </div>
+	</div>
+  <script src="/javascripts/jquery.min.js"></script>
+	<script src="/javascripts/jsShow.js"></script>
+  </body>
+</html>

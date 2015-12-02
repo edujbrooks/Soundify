@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Soundify: Spice it up!</title>
+	<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='/stylesheets/jquery.qtip.min.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel='stylesheet' href='/stylesheets/form.css' />
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	<script src="/javascripts/jquery.min.js"></script>
+	<script src="/javascripts/jquery.qtip.min.js"></script>
+  </head>
+  <body>
+	<form name="Form" action="/" onsubmit="return validateForm()" method="post">
+
+		<div class="form-style">
+			<h1>SOUNDIFY<span>Spice it up!!</span></h1>
+
+			<div class="section"><span>1</span>Name your work</div>
+			<div class="inner-wrap">
+				<label>Title<input type="text" id="txtTitle" name="soundify[title]" /></label>
+        <input type="hidden" id="hdnLink" name="soundify[link]" value="">
+				<span class="error" id="errTitle"></span>
+			</div>
+
+			<!-- VIDEO -->
+			<div class="section"><span>2</span>Video Source</div>
+			<div class="inner-wrap">
+				<div class="inner-left-wrap">
+					<input type="hidden" id="hdnVideoType" name="soundify[videoType]" value="">
+					<label>Video URL:<input type="text" id="txtVideoUrl" name="soundify[videoURL]" /></label>
+					<img id="imgVideo" src="/images/help.png" alt="">
+				</div>
+
+				<div class="inner-right-wrap">
+					<label>Start from second:<input type="text" id="txtVideoSeconds" name="soundify[videoSeconds]" value="0"/></label>
+					<!--<span class="error" id="errVideoSeconds"></span>-->
+				</div>
+				<div class="inner-down-wrap">
+					<span class="error" id="errVideoUrl"></span>
+				</div>
+			</div>
+
+			<!-- SOUND -->
+			<div class="section"><span>3</span>Sound Source</div>
+			<div class="inner-wrap">
+				<div class="inner-left-wrap">
+					<input type="hidden" id="hdnSoundType" name="soundify[soundType]" value="">
+					<label>Sound URL:<input type="text" id="txtSoundUrl" name="soundify[soundURL]" /></label>
+					<img id="imgSound" src="/images/help.png" alt="">
+				</div>
+
+				<div class="inner-right-wrap">
+					<label>Start from:<input type="text" id="txtSoundSeconds"name="soundify[soundSeconds]" value="0"/></label>
+					<!--<span class="error" id="errSoundSeconds"></span>-->
+				</div>
+				<div class="inner-down-wrap">
+					<span class="error" id="errSoundUrl"></span>
+				</div>
+			</div>
+
+			<div class="button-section">
+				<input type="submit" name="combine" value="COMBINE!"/>
+			</div>
+		</div>
+
+
+	</form>
+	<script src="/javascripts/jsIndex.js"></script>
+  </body>
+</html>
