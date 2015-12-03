@@ -20,7 +20,7 @@ h1 {
 h2 {
   text-align: left;
   background: #2A88AD;
-  margin: -10px -10px 30px -10px;
+  margin: -10px -10px 0 -10px;
   border-radius: 10px 10px 0 0;
   -webkit-border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;
@@ -54,7 +54,8 @@ h2 {
 
 .player1 {
 	width: 100%;
-	min-height: 550px;
+	min-height: 400px;
+  position: relative;
 }
 
 .player1 img {
@@ -62,10 +63,17 @@ h2 {
   margin:auto;
 	max-width: 750px;
 	max-height: 500px;
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .player2  {
 	display:block;
   margin:auto;
   margin-bottom: 10px;
+  padding: 10px 0px;
 }
