@@ -2,20 +2,25 @@
 <html>
   <head>
     <title>Soundify: Spice it up!</title>
-	<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+	  <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='/stylesheets/jquery.qtip.min.css' />
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-	<link rel='stylesheet' href='/stylesheets/form.css' />
-	<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
-	<script src="/javascripts/jquery.min.js"></script>
-	<script src="/javascripts/jquery.qtip.min.js"></script>
+	  <link rel='stylesheet' href='/stylesheets/form.css' />
+	  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+	  <script src="/javascripts/jquery.min.js"></script>
+	  <script src="/javascripts/jquery.qtip.min.js"></script>
   </head>
   <body>
+
+
+    <div class="header">
+      <img class="logo" src="/images/logo.png">
+    </div>
+
+
 	<form name="Form" action="/" onsubmit="return validateForm()" method="post">
-
 		<div class="form-style">
-			<h1>SOUNDIFY<span>Spice it up!!</span></h1>
 
+			<h1>SOUNDIFY<span>Spice it up!!</span></h1>
 			<div class="section"><span>1</span>Name your work</div>
 			<div class="inner-wrap">
 				<label>Title<input type="text" id="txtTitle" name="soundify[title]" /></label>
@@ -29,7 +34,7 @@
 				<div class="inner-left-wrap">
 					<input type="hidden" id="hdnVideoType" name="soundify[videoType]" value="">
 					<label>Video URL:<input type="text" id="txtVideoUrl" name="soundify[videoURL]" /></label>
-					<img id="imgVideo" src="/images/help.png" alt="">
+					<img id="imgVideo" src="/images/help.png" alt="help">
 				</div>
 
 				<div class="inner-right-wrap">
@@ -47,7 +52,7 @@
 				<div class="inner-left-wrap">
 					<input type="hidden" id="hdnSoundType" name="soundify[soundType]" value="">
 					<label>Sound URL:<input type="text" id="txtSoundUrl" name="soundify[soundURL]" /></label>
-					<img id="imgSound" src="/images/help.png" alt="">
+					<img id="imgSound" src="/images/help.png" alt="help">
 				</div>
 
 				<div class="inner-right-wrap">
@@ -63,9 +68,9 @@
 				<input type="submit" name="combine" value="COMBINE!"/>
 			</div>
 		</div>
-
-
 	</form>
+
+
 	<script src="/javascripts/jsIndex.js"></script>
   </body>
 </html>
